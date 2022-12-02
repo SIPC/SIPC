@@ -877,7 +877,7 @@ giscus:
   emit-metadata: "0"
   input-position: "top"
   lang: "zh-CN"
-  crossorigin="anonymous"
+  crossorigin: "anonymous"
 #---------------------------
 # 归档页
 # Archive Page
