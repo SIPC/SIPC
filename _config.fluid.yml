@@ -867,16 +867,17 @@ cusdis:
 # Based on GitHub Discussions, similar to Utterances
 # See: https://giscus.app/
 giscus:
-  repo: "SIPC/blog"
-  repo-id: "R_kgDOIiA8Mw"
-  category: "Announcements"
-  category-id: "DIC_kwDOIiA8M84CS1eG"
-  theme-dark: "dark_dimmed"
-  mapping: "pathname"
+  repo: "SIPC/SIPC-message"
+  repo-id: "R_kgDOIisw3g"
+  category: "General"
+  category-id: "DIC_kwDOIisw3s4CS3b6"
+  theme-dark: "dark_protanopia"
+  mapping: "title"
   reactions-enabled: "1"
   emit-metadata: "0"
   input-position: "top"
   lang: "zh-CN"
+  crossorigin="anonymous"
 #---------------------------
 # 归档页
 # Archive Page
