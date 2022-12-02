@@ -460,8 +460,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://yunwu7-my.sharepoint.com/personal/16_yunwu7_onmicrosoft_com/Documents/%e5%9b%be%e5%ba%8a/default.png?ga=1
-  # 头图高度，屏幕百分比
+  banner_img: https://link.jscdn.cn/sharepoint/aHR0cHM6Ly95dW53dTctbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvMTZfeXVud3U3X29ubWljcm9zb2Z0X2NvbS9FZUdRb0ZIeTNUeEt0QmF6VlFYNE83TUIwc3NIdlFuQjdLbjdHeGpKWUd2VDlnP2U9SWpiMWdl.png  # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
   banner_img_height: 100
