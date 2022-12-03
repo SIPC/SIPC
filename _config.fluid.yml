@@ -297,7 +297,7 @@ web_analytics:  # 网页访问统计
 # 对页面中的图片和评论插件进行懒加载处理，可见范围外的元素不会提前加载
 # Lazy loading of images and comment plugin on the page
 lazyload:
-  enable: true
+  enable: false
 
   # 加载时的占位图片
   # The placeholder image when loading
@@ -950,7 +950,7 @@ about:
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/SIPC", tip: "GitHub" }
     - { class: "iconfont icon-bilibili-fill", link: "https://space.bilibili.com/1564506743", tip: "Bilibili" }
-
+    - { class: "iconfont icon-mail", link: "1@sipc-blog.top", tip: "e-mail" }
 
 #---------------------------
 # 自定义页
