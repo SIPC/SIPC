@@ -725,7 +725,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
-    type: disqus
+    type: changyan
 
 
 #---------------------------
@@ -822,8 +822,8 @@ waline:
 # Based on third-party service, insufficient support for regions outside China
 # http://changyan.kuaizhan.com
 changyan:
-  appid: ''
-  appkey: ''
+  appid: 'cywppP9EK'
+  appkey: '8587bde6ac99ff5a2e508650f73ac10b'
 
 # 来必力 Livere
 # 基于第三方的服务
