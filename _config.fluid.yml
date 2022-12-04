@@ -725,7 +725,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus
-    type: changyan
+    type: utterances
 
 
 #---------------------------
@@ -742,10 +742,11 @@ post:
 # See: https://utteranc.es
 utterances:
   repo:
-  issue_term: pathname
-  label: utterances
-  theme: github-light
-  theme_dark: github-dark
+    src="https://utteranc.es/client.js"
+    repo="SIPC/Message"
+    issue-term="url"
+    theme="dark-blue"
+    crossorigin="anonymous"
 
 # Disqus
 # 基于第三方的服务，国内用户直接使用容易被墙，建议配合 Disqusjs
