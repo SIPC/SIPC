@@ -961,7 +961,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: /img/default.png
+  banner_img: https://link.jscdn.cn/sharepoint/aHR0cHM6Ly95dW53dTctbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvMTZfeXVud3U3X29ubWljcm9zb2Z0X2NvbS9FZUdRb0ZIeTNUeEt0QmF6VlFYNE83TUIwc3NIdlFuQjdLbjdHeGpKWUd2VDlnP2U9MHI1OXZT.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
