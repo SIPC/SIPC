@@ -421,7 +421,7 @@ open_graph:
 # Footer
 #---------------------------
 footer:
-  # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
+  # 页脚第一行文字的 HTML
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
   content: '
     <a href="https://github.com/SIPC" target="_blank" rel="nofollow noopener"><span>-SIPC-</span></a>
@@ -460,7 +460,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: https://link.jscdn.cn/sharepoint/aHR0cHM6Ly95dW53dTctbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvMTZfeXVud3U3X29ubWljcm9zb2Z0X2NvbS9FZUdRb0ZIeTNUeEt0QmF6VlFYNE83TUIwc3NIdlFuQjdLbjdHeGpKWUd2VDlnP2U9SWpiMWdl.png  # 头图高度，屏幕百分比
+  banner_img: https://img.wearclub.online/blog/home/Main_image.png  # 头图高度，屏幕百分比
   # Height ratio of banner image
   # Available: 0 - 100
   banner_img_height: 100
@@ -530,13 +530,13 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: https://yunwu7-my.sharepoint.com/personal/16_yunwu7_onmicrosoft_com/Documents/%e5%9b%be%e5%ba%8a/default.png?ga=1
+  banner_img: https://img.wearclub.online/blog/home/Main_image.png
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
   # 文章在首页的默认封面图，当没有指定 index_img 时会使用该图片，若两者都为空则不显示任何图片
   # Path of the default post cover when `index_img` is not set. If both are empty, no image will be displayed
-  default_index_img: https://yunwu7-my.sharepoint.com/personal/16_yunwu7_onmicrosoft_com/Documents/%e5%9b%be%e5%ba%8a/Default_picture.png?ga=1
+  default_index_img: https://img.wearclub.online/blog/home/Placeholder.png
   # 文章标题下方的元信息
   # Meta information below title
   meta:
@@ -883,7 +883,7 @@ giscus:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: https://yunwu7-my.sharepoint.com/personal/16_yunwu7_onmicrosoft_com/Documents/%e5%9b%be%e5%ba%8a/default.png?ga=1
+  banner_img: https://img.wearclub.online/blog/home/Main_image.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -894,7 +894,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: https://yunwu7-my.sharepoint.com/personal/16_yunwu7_onmicrosoft_com/Documents/%e5%9b%be%e5%ba%8a/default.png?ga=1
+  banner_img: https://img.wearclub.online/blog/home/Main_image.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -923,7 +923,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: https://yunwu7-my.sharepoint.com/personal/16_yunwu7_onmicrosoft_com/Documents/%e5%9b%be%e5%ba%8a/default.png?ga=1
+  banner_img: https://img.wearclub.online/blog/home/Main_image.png
   banner_img_height: 80
   banner_mask_alpha: 0.3
   tagcloud:
@@ -940,7 +940,7 @@ tag:
 #---------------------------
 about:
   enable: true
-  banner_img: https://link.jscdn.cn/sharepoint/aHR0cHM6Ly95dW53dTctbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvMTZfeXVud3U3X29ubWljcm9zb2Z0X2NvbS9FZUdRb0ZIeTNUeEt0QmF6VlFYNE83TUIwc3NIdlFuQjdLbjdHeGpKWUd2VDlnP2U9MHI1OXZT.png
+  banner_img: https://img.wearclub.online/blog/home/Main_image.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
   avatar: /img/avatar.png
@@ -961,7 +961,7 @@ about:
 # Custom Page through `hexo new page`
 #---------------------------
 page:
-  banner_img: https://link.jscdn.cn/sharepoint/aHR0cHM6Ly95dW53dTctbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvMTZfeXVud3U3X29ubWljcm9zb2Z0X2NvbS9FZUdRb0ZIeTNUeEt0QmF6VlFYNE83TUIwc3NIdlFuQjdLbjdHeGpKWUd2VDlnP2U9MHI1OXZT.png
+  banner_img: https://img.wearclub.online/blog/home/Main_image.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
 
@@ -972,7 +972,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: https://link.jscdn.cn/sharepoint/aHR0cHM6Ly95dW53dTctbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvMTZfeXVud3U3X29ubWljcm9zb2Z0X2NvbS9FZUdRb0ZIeTNUeEt0QmF6VlFYNE83TUIwc3NIdlFuQjdLbjdHeGpKWUd2VDlnP2U9MHI1OXZT.png
+  banner_img: https://img.wearclub.online/blog/home/Main_image.png
   banner_img_height: 85
   banner_mask_alpha: 0.3
   # 重定向到首页的延迟(毫秒)
@@ -986,7 +986,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: https://link.jscdn.cn/sharepoint/aHR0cHM6Ly95dW53dTctbXkuc2hhcmVwb2ludC5jb20vOmk6L2cvcGVyc29uYWwvMTZfeXVud3U3X29ubWljcm9zb2Z0X2NvbS9FZUdRb0ZIeTNUeEt0QmF6VlFYNE83TUIwc3NIdlFuQjdLbjdHeGpKWUd2VDlnP2U9MHI1OXZT.png
+  banner_img: https://img.wearclub.online/blog/home/Main_image.png
   banner_img_height: 60
   banner_mask_alpha: 0.3
   # 友链的成员项
