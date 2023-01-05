@@ -1,6 +1,6 @@
 ---
 title: 扩展
-comments: 'giscus'
+comments: true
 ---
 # 请在本地编辑器中加载 - 请耐心等待加载完成
 
