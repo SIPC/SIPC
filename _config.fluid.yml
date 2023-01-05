@@ -871,7 +871,7 @@ giscus:
   repo-id: "R_kgDOIucOfQ"
   category: "Announcements"
   category-id: "DIC_kwDOIucOfc4CTa-m"
-  theme-dark: "dark_protanopia"
+  theme-dark: "preferred_color_scheme"
   mapping: "url"
   reactions-enabled: "1"
   emit-metadata: "0"
