@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Socials from "../components/Socials.astro";
+import Projects from "../components/Projects.astro";
+import Services from "../components/Services.astro";
+import Skills from "../components/Skills.astro";
+---
+
+<Layout title="Hi, I'm sipc.ink">
+  <main>
+    <h1>Hello, I'm <span class="text-gradient">sipc.ink</span></h1>
+    <p class="instructions">
+      <strong>Individual</strong> developer / Middle student
+    </p>
+    <Socials />
+    <Services />
+    <Projects />
+    <Skills />
+    <footer mt-12>
+      <p text-sm op-40>sipc.ink © 2024</br>Powered by <a href="https://github.com/xhofe/homepage">xhofe/homepage</a></p>
+    </footer>
+    <style is:inline>
+      .floatingchat-container-wrap,
+      .floating-chat-kofi-popup-iframe {
+        right: 16px;
+        left: unset;
+      }
+    </style>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 94ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  p a {
+    color: inherit;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    /* border: 1px solid rgba(var(--accent), 50%); */
+    /* padding: 1rem; */
+    border-radius: 0.6rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 22%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+</style>
