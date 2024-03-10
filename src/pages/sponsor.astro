@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Sponsor me">
+  <main>
+    <h1><span class="text-gradient">Sponsor sipc.ink</span></h1>
+    <p class="instructions">
+      If you think my project is helpful to you, consider buying me a cup of coffee. 😎
+    </p>
+    
+    <div class="img-container">
+      <div class="image">
+        <img src="/public/images/zfb.png" alt="Alipay QR Code" />
+      </div>
+      <div class="image">
+        <img src="/public/images/wx.png" alt="WeChat QR Code" />
+      </div>
+    </div>
+    <footer mt-12>
+      <p text-sm op-40>
+        sipc.ink © 2024</br>Powered by <a href="https://github.com/xhofe/homepage">xhofe/homepage</a>
+      </p>
+    </footer>
+  </main>
+  <style is:inline>
+    .floatingchat-container-wrap,
+    .floating-chat-kofi-popup-iframe {
+      right: 16px;
+      left: unset;
+    }
+  </style>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 94ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  p a {
+    color: inherit;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .img-container {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 2rem;
+  }
+  .image {
+    text-align: left;
+    margin: 1rem 0rem;
+  }
+  .image img {
+    max-width: 300px;
+  }
+</style>
