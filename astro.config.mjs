@@ -9,6 +9,6 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   integrations: [studiocmsUi()],
   adapter: cloudflare({
-     imageService: 'cloudflare'
+     imageService: 'passthrough'
   })
 });
