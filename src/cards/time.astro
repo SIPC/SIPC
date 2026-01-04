@@ -1,0 +1,82 @@
+---
+import { Card } from "studiocms:ui/components";
+---
+
+<Card style="max-width: 240px; width: 100%;">
+    <h4 slot="header">所在地时间</h4>
+	<style>
+		.time-card {
+			width: 210px;
+			padding: 5px 28px;
+			border-radius: 12px;
+			background: rgba(0, 0, 0, 0.04);
+			box-sizing: border-box;
+		}
+
+		.time-date {
+			font-size: 15px;
+			opacity: 0.6;
+			margin-bottom: 2px;
+            text-align: center;
+		}
+
+		.time-clock {
+			font-size: 31px;
+			font-weight: 500;
+			letter-spacing: 0.1em;
+            text-align: center;
+			transition:
+				opacity 0.25s ease,
+				transform 0.25s ease;
+		}
+
+		.time-clock.fade {
+			opacity: 0.5;
+		}
+	</style>
+
+	<div class="time-card">
+		<div class="time-date" id="date">2026年1月1日星期四</div>
+		<div class="time-clock" id="clock">00:00:00</div>
+	</div>
+
+	<script>
+		function getUTC8Date() {
+			const now = new Date();
+			const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+			return new Date(utc + 8 * 60 * 60000);
+		}
+
+		function updateTime() {
+			const now = getUTC8Date();
+
+			const date = now.toLocaleDateString("zh-CN", {
+				year: "numeric",
+				month: "long",
+				day: "numeric",
+				weekday: "long",
+			});
+
+			const time = now.toLocaleTimeString("zh-CN", {
+				hour: "2-digit",
+				minute: "2-digit",
+				second: "2-digit",
+				hour12: false,
+			});
+
+			const dateEl = document.getElementById("date");
+			const clockEl = document.getElementById("clock");
+
+			dateEl!.textContent = date;
+			clockEl!.classList.add("fade");
+
+			setTimeout(() => {
+				clockEl!.textContent = time;
+				clockEl!.classList.remove("fade");
+			}, 150);
+		}
+
+		updateTime();
+		setInterval(updateTime, 1000);
+	</script>
+</Card>

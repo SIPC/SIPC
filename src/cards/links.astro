@@ -1,0 +1,18 @@
+---
+import { Card } from "studiocms:ui/components";
+import { Button } from "studiocms:ui/components";
+import Github from "../assets/icon/github.svg";
+import Bilibili from "../assets/icon/bilibili.svg";
+---
+
+<Card style="max-width: 210px; width: 100%;">
+    <h4 slot="header">链接</h4>
+    <span style="display: inline-flex; flex-wrap: wrap; gap: 10px;">
+        <Button color="default" variant="outlined" target="_blank" as="a" href="https://github.com/SIPC" >
+            <Github />
+        </Button>
+        <Button color="default" variant="outlined" target="_blank" as="a" href="https://space.bilibili.com/1564506743" >
+            <Bilibili />
+        </Button>
+    </span>
+</Card>
