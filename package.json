@@ -9,6 +9,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/cloudflare": "^12.6.12",
     "@studiocms/ui": "^0.4.17",
     "astro": "^5.16.6",
     "vite": "^6.4.1"
