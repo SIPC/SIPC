@@ -1,0 +1,35 @@
+{
+  "profile": {
+    "name": "sipc.ink",
+    "description": "Quietly making waves."
+  },
+  "about": {
+    "title": "About Me",
+    "old": "An idle vocational student",
+    "content": "Interested in electronics & programming, love to take things apart and explore. Prefer the process and results over titles."
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "links": {
+    "title": "Links"
+  },
+  "projects": {
+    "title": "Projects",
+    "lyrify_translator": {
+      "name": "Lyrify Translator",
+      "desc": "A translation tool based on LLM, supporting multi-language translation with multiple engines."
+    },
+    "lyrify_expand": {
+      "name": "Lyrify expand",
+      "desc": "Reverse proxy node for Lyrify Translator."
+    }
+  },
+  "time": {
+    "title": "Local Time"
+  },
+  "footer": {
+    "site": "sipc.ink",
+    "font": "MiSans"
+  }
+}

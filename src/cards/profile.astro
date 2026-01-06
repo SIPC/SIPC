@@ -1,9 +1,13 @@
 ---
-import { Card } from "studiocms:ui/components";
-import { User } from "studiocms:ui/components";
+import { Card } from "studiocms:ui/components/card";
+import { User } from "studiocms:ui/components/user";
 import ProfileImage from "../../public/avatar.jpg";
+
+import { useTastro } from "@sipc.ink/tastro"
+const { t } = useTastro(Astro.request)
 ---
 
 <Card style="width: 100%; min-height: 80px; display: flex; align-items: center; justify-content: center;">
-    <User name="sipc.ink" description="不喧哗，自有声。" avatar={ProfileImage} />
+    <User name={t("profile.name")} description={t("profile.description")} avatar={ProfileImage} />
 </Card>
+    

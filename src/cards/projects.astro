@@ -1,25 +1,28 @@
 ---
-import { Card } from "studiocms:ui/components";
+import { Card } from "studiocms:ui/components/card";
+
+import { useTastro } from "@sipc.ink/tastro"
+const { t } = useTastro(Astro.request)
 ---
 
 <Card style="width: 100%; height: 100%;">
-    <h4 slot="header">项目</h4>
+    <h4 slot="header">{t("projects.title")}</h4>
     <div style="display: flex; flex-direction: column; gap: 8px; height: 100%;">
         <Card style="width: 100%;">
             <h5 slot="header">
-                <a href="https://github.com/Lyrify-Cloud/Lyrify-Translator" style="color: #ffffff; text-decoration: none;">Lyrify Translator</a>
+                <a href="https://github.com/Lyrify-Cloud/Lyrify-Translator" style="color: #ffffff; text-decoration: none;">{t("projects.lyrify_translator.name")}</a>
             </h5>
             <p style="font-size: 13px; color: #a1a1aa; margin: 0; line-height: 1.4;">
-                一款基于大模型的翻译工具，支持多语言互译，提供多种翻译引擎。
+                {t("projects.lyrify_translator.desc")}
             </p>
         </Card>
 
         <Card style="width: 100%;">
             <h5 slot="header">
-                <a href="https://github.com/SIPC/Lyrify-expand" style="color: #ffffff; text-decoration: none;">Lyrify expand</a>
+                <a href="https://github.com/SIPC/Lyrify-expand" style="color: #ffffff; text-decoration: none;">{t("projects.lyrify_expand.name")}</a>
             </h5>
             <p style="font-size: 13px; color: #a1a1aa; margin: 0; line-height: 1.4;">
-                Lyrify Translator 配套逆向节点。
+                {t("projects.lyrify_expand.desc")}
             </p>
         </Card>
     </div>

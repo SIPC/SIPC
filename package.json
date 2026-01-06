@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "@astrojs/cloudflare": "^12.6.12",
-    "@studiocms/ui": "^0.4.17",
+    "@sipc.ink/tastro": "^0.1.6",
+    "@studiocms/ui": "^1.0.0",
     "astro": "^5.16.6",
     "vite": "^6.4.1"
   }

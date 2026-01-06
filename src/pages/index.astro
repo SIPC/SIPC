@@ -6,16 +6,29 @@ import About from "../cards/about.astro";
 import Time from "../cards/time.astro";
 import Skills from "../cards/skills.astro";
 import Projects from "../cards/projects.astro";
+
+import { initTastro, useTastro } from "@sipc.ink/tastro"
+
+initTastro({
+  defaultLang: "en",
+  languages: {
+    en: () => import("../i18n/en.json"),
+    zh: () => import("../i18n/zh.json"),
+  }
+})
+
+const { t, lang} = useTastro(Astro.request)
+
 ---
 
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.png" />
     <link rel="stylesheet" crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/misans@4.1.0/lib/Normal/MiSans-Medium.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>sipc.ink</title>
+    <title>{t("profile.name")}</title>
   </head>
 <body>
   <main style="min-height: 100vh; width: 100%; display: flex; align-items: center; justify-content: center; padding: 16px;">
@@ -81,5 +94,11 @@ import Projects from "../cards/projects.astro";
   }
 </style>
 
+<script>
+  window.setLang = function (lang) {
+    document.cookie = `lang=${lang}; path=/; max-age=31536000`
+    location.reload()
+  }
+</script>
 
 </html>
