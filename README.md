@@ -1,5 +1,7 @@
 # sipc.ink
 
+[English](README.en.md) | 中文
+
 一个基于 Astro + StudioCMS UI 构建的简洁个人主页，支持中英文国际化。
 
 ## 📸 效果预览
@@ -28,9 +30,9 @@ pnpm run preview
 
 ## 🛠️ 技术栈
 
-- [**移动端布局**](https://astro.build) - 静态站点生成器
+- [**Astro**](https://astro.build) - 静态站点生成器
 - [**StudioCMS UI**](https://ui.studiocms.dev/) - 组件库
-- [**StudioCMS UI**](https://hyperos.mi.com/font) - 小米开源字体
+- [**Mi Sans**](https://hyperos.mi.com/font) - 小米开源字体
 - [**Tastro**](https://github.com/SIPC/Tastro) - 国际化工具
 
 ## 🌐 国际化 (i18n)
@@ -41,9 +43,7 @@ pnpm run preview
 - **English (en)** - 英语
 
 ### 语言切换
-站点会根据浏览器语言自动选择，也可以通过以下方式手动切换：
-- 点击页面上的语言切换按钮（如有）
-- 或直接访问带语言参数的 URL（通过 cookie 记忆）
+站点会根据浏览器语言自动选择。
 
 ### 编辑翻译内容
 所有翻译文本都集中管理在 `src/i18n/` 目录下：

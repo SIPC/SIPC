@@ -95,6 +95,7 @@ const { t, lang} = useTastro(Astro.request)
 </style>
 
 <script>
+  // TEST
   window.setLang = function (lang) {
     document.cookie = `lang=${lang}; path=/; max-age=31536000`
     location.reload()
