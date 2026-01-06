@@ -1,6 +1,12 @@
-# Personal Website
+# sipc.ink
 
 一个基于 Astro + StudioCMS UI 构建的简洁个人主页。
+
+## 📸 效果预览
+
+| 桌面端布局 | 移动端布局 |
+|------------|------------|
+| ![移动端布局](assets/screenshots/portrait.png) | ![桌面端布局](assets/screenshots/landscape.png) |
 
 ## 🚀 快速开始
 

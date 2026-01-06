@@ -2,8 +2,10 @@
 import { Card } from "studiocms:ui/components";
 ---
 
-<Card style="max-width: 240px; width: 100%;text-align: center;">
+<Card style="width: 100%; height: 100%">
     <h4 slot="header">关于我</h4>
-    <del style="color: #666;">一个无所事事的 fvv 职高生</del><br />
-    对 电子产品&编程 感兴趣，喜欢把东西拆开研究，也乐意慢慢把想法做出来。比起头衔，更在意过程和结果。
+    <div style="display: flex; flex-direction: column; gap: 2px; height: 100%; justify-content: center">
+        <del style="color: #666;">一个无所事事的 fvv 职高生</del>
+        <div>对 电子产品&编程 感兴趣，喜欢把东西拆开研究，也乐意慢慢把想法做出来。比起头衔，更在意过程和结果。</div>
+    </div>
 </Card>

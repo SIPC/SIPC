@@ -2,45 +2,25 @@
 import { Card } from "studiocms:ui/components";
 ---
 
-<Card style="max-width: 210px; width: 100%;">
+<Card style="width: 100%; height: 100%;">
     <h4 slot="header">项目</h4>
-
-    <span style="display: inline-flex; flex-wrap: wrap; gap: 14px;">
+    <div style="display: flex; flex-direction: column; gap: 8px; height: 100%;">
         <Card style="width: 100%;">
             <h5 slot="header">
-                <a href="https://github.com/Lyrify-Cloud/Lyrify-Translator" class="project-link">Lyrify Translator</a>
+                <a href="https://github.com/Lyrify-Cloud/Lyrify-Translator" style="color: #ffffff; text-decoration: none;">Lyrify Translator</a>
             </h5>
-            <p class="project-desc">
+            <p style="font-size: 13px; color: #a1a1aa; margin: 0; line-height: 1.4;">
                 一款基于大模型的翻译工具，支持多语言互译，提供多种翻译引擎。
             </p>
         </Card>
 
         <Card style="width: 100%;">
             <h5 slot="header">
-                <a href="https://github.com/SIPC/Lyrify-expand" class="project-link">Lyrify expand</a>
+                <a href="https://github.com/SIPC/Lyrify-expand" style="color: #ffffff; text-decoration: none;">Lyrify expand</a>
             </h5>
-            <p class="project-desc">
-                Lyrify Fanyi 配套逆向节点。
+            <p style="font-size: 13px; color: #a1a1aa; margin: 0; line-height: 1.4;">
+                Lyrify Translator 配套逆向节点。
             </p>
         </Card>
-    </span>
-
-    <style>
-        .project-desc {
-            font-size: 14px;
-            color: #666;
-            /* line-height: 1.5; */
-            margin: 0;
-        }
-
-        h5[slot="header"] a,
-            .project-link {
-                color: #ffffff !important;
-                text-decoration: none;
-            }
-
-        .project-link:visited {
-                color: #ffffff !important;
-            }       
-    </style>
+    </div>
 </Card>

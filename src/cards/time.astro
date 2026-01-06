@@ -2,81 +2,52 @@
 import { Card } from "studiocms:ui/components";
 ---
 
-<Card style="max-width: 240px; width: 100%;">
+<Card style="width: 100%;">
     <h4 slot="header">所在地时间</h4>
-	<style>
-		.time-card {
-			width: 210px;
-			padding: 5px 28px;
-			border-radius: 12px;
-			background: rgba(0, 0, 0, 0.04);
-			box-sizing: border-box;
-		}
+    <div style="border-radius: 12px; background: rgba(0, 0, 0, 0.04); text-align: center;">
+        <div id="date" style="font-size: 15px; opacity: 0.6; margin-bottom: 3px;">2026年1月1日星期四</div>
+        <div id="clock" style="font-size: 28px; font-weight: 500; letter-spacing: 0.1em; transition: opacity 0.25s ease;">00:00:00</div>
+    </div>
 
-		.time-date {
-			font-size: 15px;
-			opacity: 0.6;
-			margin-bottom: 2px;
-            text-align: center;
-		}
+    <script>
+        function getUTC8Date() {
+            const now = new Date();
+            const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+            return new Date(utc + 8 * 60 * 60000);
+        }
 
-		.time-clock {
-			font-size: 31px;
-			font-weight: 500;
-			letter-spacing: 0.1em;
-            text-align: center;
-			transition:
-				opacity 0.25s ease,
-				transform 0.25s ease;
-		}
+        function updateTime() {
+            const now = getUTC8Date();
 
-		.time-clock.fade {
-			opacity: 0.5;
-		}
-	</style>
+            const date = now.toLocaleDateString("zh-CN", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                weekday: "long",
+            });
 
-	<div class="time-card">
-		<div class="time-date" id="date">2026年1月1日星期四</div>
-		<div class="time-clock" id="clock">00:00:00</div>
-	</div>
+            const time = now.toLocaleTimeString("zh-CN", {
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: false,
+            });
 
-	<script>
-		function getUTC8Date() {
-			const now = new Date();
-			const utc = now.getTime() + now.getTimezoneOffset() * 60000;
-			return new Date(utc + 8 * 60 * 60000);
-		}
+            const dateEl = document.getElementById("date");
+            const clockEl = document.getElementById("clock");
 
-		function updateTime() {
-			const now = getUTC8Date();
+            if (dateEl && clockEl) {
+                dateEl.textContent = date;
+                clockEl.style.opacity = "0.5";
+                
+                setTimeout(() => {
+                    clockEl.textContent = time;
+                    clockEl.style.opacity = "1";
+                }, 150);
+            }
+        }
 
-			const date = now.toLocaleDateString("zh-CN", {
-				year: "numeric",
-				month: "long",
-				day: "numeric",
-				weekday: "long",
-			});
-
-			const time = now.toLocaleTimeString("zh-CN", {
-				hour: "2-digit",
-				minute: "2-digit",
-				second: "2-digit",
-				hour12: false,
-			});
-
-			const dateEl = document.getElementById("date");
-			const clockEl = document.getElementById("clock");
-
-			dateEl!.textContent = date;
-			clockEl!.classList.add("fade");
-
-			setTimeout(() => {
-				clockEl!.textContent = time;
-				clockEl!.classList.remove("fade");
-			}, 150);
-		}
-
-		updateTime();
-		setInterval(updateTime, 1000);
-	</script>
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
 </Card>

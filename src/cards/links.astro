@@ -5,14 +5,14 @@ import Github from "../assets/icon/github.svg";
 import Bilibili from "../assets/icon/bilibili.svg";
 ---
 
-<Card style="max-width: 210px; width: 100%;">
+<Card style="width: 100%; height: 100%;">
     <h4 slot="header">链接</h4>
-    <span style="display: inline-flex; flex-wrap: wrap; gap: 10px;">
-        <Button color="default" variant="outlined" target="_blank" as="a" href="https://github.com/SIPC" >
+    <div style="display: flex; gap: 10px;">
+        <Button color="default" variant="outlined" target="_blank" as="a" href="https://github.com/SIPC" style="padding: 12px; border-radius: 12px;">
             <Github />
         </Button>
-        <Button color="default" variant="outlined" target="_blank" as="a" href="https://space.bilibili.com/1564506743" >
+        <Button color="default" variant="outlined" target="_blank" as="a" href="https://space.bilibili.com/1564506743" style="padding: 12px; border-radius: 12px;">
             <Bilibili />
         </Button>
-    </span>
+    </div>
 </Card>
